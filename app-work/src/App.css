@@ -1,0 +1,10 @@
+body {
+  background-image: url('./assets/keyboard-coffee-smartphone-notebook-color-background-top-view_1286-776.avif');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0; 
+  padding: 0; 
+  height: auto; 
+  color: #fff; 
+}

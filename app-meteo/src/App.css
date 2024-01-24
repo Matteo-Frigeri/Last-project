@@ -1,0 +1,43 @@
+body{
+    margin: 0%;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    font-weight: 400;
+    align-items: center;
+    text-align: center;
+    background-image: url('./assets/pexels-photo-15837438.webp');
+    background-size: cover;
+    height: 100vh; 
+}
+/*NavBar*/
+nav {
+    background: radial-gradient(circle at center, #3498db, #f7f7f7);
+    color: rgb(56, 59, 227);
+  }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0%;
+  }
+  
+  nav li {
+    font-size: large;
+    font-weight: bold;
+    margin: 5% 10%; 
+  }
+  /*HomeSection*/
+  .center{
+    padding: 4% 6%;
+  }
+  /*Intestaions*/
+  h1{
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 2%;
+  }
+  /*Description*/
+  p{ margin-bottom: 0%;}
