@@ -1,12 +1,10 @@
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 
-/*Questo componente è responsabile della visualizzazione del riepilogo del meteo per una data 
-città, includendo informazioni come il nome della città, l'orario corrente, la temperatura e la 
-descrizione del meteo. 
-La temperatura corrente delle fascie orarie diverse da quella corrente[0] non viene chiarmante data,
-restituento "N/A".
-*/
+//Questo componente è responsabile della visualizzazione del riepilogo del meteo per una data 
+//città, includendo informazioni come il nome della città, l'orario corrente, la temperatura e la 
+//descrizione del meteo.
+
 const WeatherSummaryCard = ({
   city,
   currentTime,
@@ -28,18 +26,12 @@ const WeatherSummaryCard = ({
               <hr className="d-sm-none"/>
               <Col sm={4} className="mt-1">
                 <p className="h1">
-                  {!showMore
-                    ? (currentDayData[0]?.temperature - 273.15).toFixed(1) +
-                      " °C"
-                    : index === 0
-                    ? (currentDayData[0]?.temperature - 273.15).toFixed(1) +
-                      " °C"
-                    : "N/A"}
+                 {(data.temperature - 273.15).toFixed(1)}
                 </p>
                 <p>
                   {showMore && index === 0 || index===0
                     ? "Current Temperature"
-                    : "Not available"}
+                    : "Temperature Forecast"}
                 </p>
               </Col>
               <hr className="d-sm-none"/>

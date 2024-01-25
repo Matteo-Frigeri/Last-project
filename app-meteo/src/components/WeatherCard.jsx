@@ -45,5 +45,4 @@ const WeatherCard = ({ icon, title, value, unit, icon1, title1, value1, unit1, }
                   </Row>
                 </Container>
 );
-
 export default WeatherCard;

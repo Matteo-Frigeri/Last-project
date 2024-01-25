@@ -8,10 +8,11 @@ import {
   faWind,
   faCloudRain,
 } from "@fortawesome/free-solid-svg-icons";
-import { Card, Col, Container, Row, Button } from "react-bootstrap";
+import { Card, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import WeatherCard from "./WeatherCard";
 import WeatherSummaryCard from "./WeatherSummaryCard";
+import TableWeather from "./TableWeather";
 
 
 const WeatherDetails = () => {
@@ -92,7 +93,7 @@ l'etichetta e il colore del pulsante di conseguenza. */
 
 /*Questa funzione visualizza le previsioni del tempo in base allo stato di showMore. Se showMore
 è true, mostra tutte le previsioni del giorno. Altrimenti, mostra solo un numero specifico di 
-risultati. Inoltre, mostra un pulsante "Show More/Show Less" se ci sono più di una previsione 
+risultati (1). Inoltre, mostra un pulsante "Show More/Show Less" se ci sono più di una previsione 
 disponibile. */
   const displayWeatherData = () => {
     const weatherData = extractWeatherData();
@@ -155,6 +156,7 @@ disponibile. */
                 data={data}
                 index={index} 
               />
+              {index === 0 && <TableWeather currentDayData={currentDayData} />}
             </Card.Body>
           </Card>
         ))}
