@@ -13,7 +13,7 @@ const TableWeather = ({ currentDayData }) => {
         <tr>
           <th style={{ background: 'linear-gradient(to right, #87CEEB, #FFFFFF)' }} >Time</th>
           {currentDayData.map((data, index) => (
-            <th key={index}>{extractTime(data.date)}</th>
+            <td key={index}>{extractTime(data.date)}0</td>
           ))}
         </tr>
       </thead>
@@ -21,7 +21,7 @@ const TableWeather = ({ currentDayData }) => {
         <tr>
           <th style={{ background: 'linear-gradient(to right, #87CEEB, #FFFFFF)' }}>Temperature (°C)</th>
           {currentDayData.map((data, index) => (
-            <th key={index}>{(data.temperature - 273.15).toFixed(1)}</th>
+            <td key={index}>{(data.temperature - 273.15).toFixed(1)}</td>
           ))}
         </tr>
       </tbody>
