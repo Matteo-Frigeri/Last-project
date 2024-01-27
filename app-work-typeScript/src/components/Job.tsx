@@ -55,7 +55,7 @@ const Job: React.FC<JobProps> = ({ data, showDetails = true }) => {
   // Ritorno del JSX del componente Job
   return (
     <Row
-      className="d-flex flex-md-column mx-0 mt-3 p-3 bg-white text-black small"
+      className="d-flex mx-0 mt-3 p-3 bg-white text-black small"
       style={{
         border: '1px solid #00000033',
         borderRadius: 4,
